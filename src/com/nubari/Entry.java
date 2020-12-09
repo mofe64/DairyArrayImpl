@@ -19,7 +19,7 @@ public class Entry {
     }
 
     public Entry(String title) {
-        this.title = title;
+        this.title = title.toLowerCase();
         calendar = Calendar.getInstance();
         this.date = dateFormat.format(calendar.getTime());
     }

@@ -64,6 +64,8 @@ class EntryTest {
 
     @Test
     void testUserShouldBeAbleToRetrieveDateOfEntry(){
-        assertEquals("07/12/20", entry.getDate());
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yy");
+        Calendar calendar =  Calendar.getInstance();
+        assertEquals(dateFormat.format(calendar.getTime()), entry.getDate());
     }
 }

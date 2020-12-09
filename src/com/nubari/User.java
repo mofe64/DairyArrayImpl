@@ -15,7 +15,7 @@ public class User {
     }
 
     public boolean authenticate(String givenPassword) {
-        if (givenPassword.equals(givenPassword)) {
+        if (password.equals(givenPassword)) {
             return true;
         } else {
             return false;
@@ -27,5 +27,13 @@ public class User {
     public String getPassword(){
         return password;
     }
+    public String getFirstName(){
+        return firstName;
+    }
+    public String getLastName(){
+        return lastName;
+    }
+
+
 
 }
